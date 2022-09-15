@@ -47,7 +47,8 @@ body {
 }
 
 .flexbox > img {
-  width: 100px;
+  width: calc(100% / 3);
+  object-fit: scale-down;
 }
 
 .flexbox > .card-info {
