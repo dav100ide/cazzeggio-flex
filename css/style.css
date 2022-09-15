@@ -1,0 +1,69 @@
+/* reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: white;
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #240b36, #c31432); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/* intro */
+.intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.intro h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.intro p::first-line {
+  background-color: gold;
+  font-size: 30px;
+  color: black;
+}
+/* common */
+.container {
+  margin: 60px auto;
+  padding: 30px;
+  max-width: 1300px;
+  background-color: rgba(15, 11, 26, 0.6);
+}
+
+/* =============
+   FLEX BOX
+================*/
+
+.flexbox {
+  background-color: black;
+  display: flex;
+}
+.flexbox * {
+  display: block;
+}
+
+.flexbox > img {
+  width: 100px;
+}
+
+.flexbox > .card-info {
+  padding: 15px;
+}
+
+.flexbox > .card-info > * {
+  margin: 5px 0;
+}
+
+.flexbox > .card-info a {
+  color: aquamarine;
+}
+
+.big-flex-box {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 15px;
+}
